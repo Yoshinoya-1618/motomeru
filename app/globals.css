@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* 最低限のブランド・トークン（Tailwind拡張なしでも動くように@apply） */
+:root { color-scheme: light; }
+.bg-surface { @apply bg-gray-50; }
+.text-ink { @apply text-gray-900; }
+.text-subtle { @apply text-gray-500; }
+.bg-brand-600 { @apply bg-emerald-600; }
+.bg-brand-700 { @apply bg-emerald-700; }
+.text-brand-600 { @apply text-emerald-600; }
+.shadow-card { @apply shadow-lg; }
+
+/* アクセシビリティ補助 */
+:focus-visible { @apply outline-none ring-2 ring-emerald-500; }
